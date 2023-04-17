@@ -1,0 +1,327 @@
+body {
+  background-color: #171717;
+  color: #b6b5b5;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  color: #f6e0e0;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+}
+
+h2 {
+  color: #f6e0e0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #f6e0e0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  line-height: 2;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+a {
+  color: #171717;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #877b7b;
+  cursor: pointer;
+}
+
+.top-container {
+  /* background-color: #171717; */
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.bottom-container {
+  background-color: #f6e0e0;
+  padding: 50px 0 20px;
+  image-resolution: 200;
+}
+
+.middle-container #profile img{
+  width: 18%;
+  border-radius: 50%;
+}
+
+.skills-list{
+  display: flex;
+  margin: auto;
+  width: auto;
+  text-align: center;
+  justify-content: center;
+  border: 2px solid #f6e0e0;
+  border-radius: 15px;
+  
+}
+
+
+.skills-pair{
+  flex: 1;
+  display: block;
+  padding: 20px;
+  margin:  40px;
+  text-align: center;
+  
+}
+
+.skills-pair img {
+  width: 30px;
+}
+
+.dev {
+  text-decoration: underline;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+
+.contact-message {
+  width: 35%;
+  margin: 40px auto 60px;
+}
+
+.copyright {
+  color: #171717;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.code-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.chilli-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+/*
+.btn {
+  background: #f6e0e0;
+  background-image: -webkit-linear-gradient(top, #f6e0e0, #f4eded);
+  background-image: -moz-linear-gradient(top, #f6e0e0, #f4eded);
+  background-image: -ms-linear-gradient(top, #f6e0e0, #f4eded);
+  background-image: -o-linear-gradient(top, #f6e0e0, #f4eded);
+  background-image: linear-gradient(to bottom, #bcacac, #f4eded);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #171717;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #faecec;
+  background-image: -webkit-linear-gradient(top, #faecec, #d6c5c5);
+  background-image: -moz-linear-gradient(top, #faecec, #d6c5c5);
+  background-image: -ms-linear-gradient(top, #faecec, #d6c5c5);
+  background-image: -o-linear-gradient(top, #faecec, #d6c5c5);
+  background-image: linear-gradient(to bottom, #faecec, #d6c5c5);
+  text-decoration: none;
+  color: #171717;
+} 
+*/
+
+.mountain {
+  width: 300px;
+  padding-top: 40px;
+}
+
+#profile img {
+  padding-bottom: 40px;
+}
+
+.footer-link:hover {
+  opacity: 70%;
+}
+
+/*********************************************************************************** Hamburger **********************************************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  z-index: 100;
+}
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container a {
+  text-decoration: none;
+  color: #171717;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+   
+}
+
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+
+/* Making the hamburger */
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 28px;
+  width: 34px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .bar {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #f6e0e0;
+}
+
+/* Adding transitions  */
+.nav-container .hamburger-lines .bar1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .bar2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .bar3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 120px;
+  background-color: #e9e5e5;
+  background-image: -webkit-linear-gradient(top, #a1ded7, #ffb4b4);
+  background-image: -moz-linear-gradient(top,#a1ded7, #ffb4b4);
+  background-image: -ms-linear-gradient(top,#a1ded7, #ffb4b4);
+  background-image: -o-linear-gradient(top,#a1ded7, #ffb4b4);
+  background-image: linear-gradient(to bottom,#a1ded7, #ffb4b4);
+  height: 100vh;
+  width: 300px;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 50px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.navbar .menu-items li {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
+/* Controlling the state of the icon */
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .bar1 {
+  transform: rotate(45deg);
+  background-color: #171717;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .bar2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .bar3 {
+  transform: rotate(-45deg);
+  background-color: #171717;
+}

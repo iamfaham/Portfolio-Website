@@ -182,6 +182,35 @@ a:hover {
   opacity: 70%;
 }
 
+/**Projects section**/
+.layout {
+  padding-top: 20px;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: repeat(3, 60%);
+  grid-template-columns: repeat(3, 30%);
+  gap: 8px;
+}
+.layout div {
+  display: block;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  border-color: #877b7b;
+  border: solid;
+  padding: 5px;
+}
+.project h4{
+  font-size: 1.6rem;
+  margin: 5% auto;
+}
+.project a {
+  color: #877b7b;
+}
+
+.project a:hover {
+  color:  #b6b5b5;
+  cursor: pointer;
+}
 /*********************************************************************************** Hamburger **********************************************************************************/
 
 * {

@@ -216,16 +216,15 @@ a:hover {
 
 /** Projects section **/
 .layout {
-  padding-top: 20px;
+  padding-top: 50px;
   justify-content: center;
   display: grid;
-  grid-template-rows: repeat(3, 60%);
+  grid-template-rows: repeat(2, 60%);
   grid-template-columns: repeat(3, 30%);
-  gap: 8px;
+  gap: 25px;
 }
 .layout div {
   display: block;
-  justify-content: space-evenly;
   border-radius: 10px;
   border-color: #877b7b;
   border: solid;

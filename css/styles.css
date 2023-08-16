@@ -185,8 +185,36 @@ a:hover {
 .footer-link:hover {
   opacity: 70%;
 }
+/** Skills section **/
+.layoutSkills {
+  padding-top: 20px;
+  justify-content: space-evenly;
+  display: grid;
+  grid-template-rows: repeat(1, 100%);
+  grid-template-columns: repeat(2, 30%);
 
-/**Projects section**/
+}
+.skillset {
+  display: block;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  border-color: #877b7b;
+  border: solid;
+  padding: 5px;
+}
+
+.layoutSkills h4{
+  font-size: 1.6rem;
+  line-height: 3;
+}
+.skillset ul li{
+  justify-content: center;
+  line-height: 2;
+  padding-bottom: 10px;
+  list-style: none;
+}
+
+/** Projects section **/
 .layout {
   padding-top: 20px;
   justify-content: center;

@@ -70,31 +70,6 @@ a:hover {
   border-radius: 50%;
 }
 
-.skills-list{
-  display: flex;
-  margin: auto;
-  width: auto;
-  text-align: center;
-  justify-content: center;
-  border: 2px solid #f6e0e0;
-  border-radius: 15px;
-  
-}
-
-
-.skills-pair{
-  flex: 1;
-  display: block;
-  padding: 20px;
-  margin:  40px;
-  text-align: center;
-  
-}
-
-.skills-pair img {
-  width: 30px;
-}
-
 .dev {
   text-decoration: underline;
 }
@@ -189,10 +164,9 @@ a:hover {
 .layoutSkills {
   padding-top: 20px;
   justify-content: space-evenly;
-  display: grid;
-  grid-template-rows: repeat(1, 100%);
-  grid-template-columns: repeat(2, 30%);
-
+  display: flex;
+  /* grid-template-rows: repeat(1, 100%);
+  grid-template-columns: repeat(2, 30%); */
 }
 .skillset {
   display: block;
@@ -200,39 +174,51 @@ a:hover {
   border-radius: 10px;
   border-color: #877b7b;
   border: solid;
-  padding: 5px;
+  padding: 25px;
 }
 
 .layoutSkills h4{
-  font-size: 1.6rem;
-  line-height: 3;
+  font-size: 1.5rem;
+  line-height: 2;
+  padding-bottom: 10px;
 }
 .skillset ul li{
   justify-content: center;
   line-height: 2;
   padding-bottom: 10px;
   list-style: none;
+  font-size: 0.90rem;
+}
+/* @media screen and (max-width = 700px){
+  .skillset{
+    flex-shrink: 0;
+  }
+} */
+/** Projects section **/
+
+.layout {
+  padding: 50px 50px 30px;
+  justify-content: center;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
 }
 
-/** Projects section **/
-.layout {
-  padding-top: 50px;
-  justify-content: center;
-  display: grid;
-  grid-template-rows: repeat(2, 60%);
-  grid-template-columns: repeat(3, 30%);
-  gap: 25px;
-}
 .layout div {
   display: block;
   border-radius: 10px;
   border-color: #877b7b;
   border: solid;
   padding: 5px;
+  flex-grow: 3;
 }
+
 .project h4{
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin: 5% auto;
+}
+.project p {
+  font-size: 0.90rem;
 }
 .project a {
   color: #877b7b;
@@ -241,6 +227,14 @@ a:hover {
 .project a:hover {
   color:  #b6b5b5;
   cursor: pointer;
+}
+
+
+@media screen and (max-width = 700px) {
+  .layout {
+    grid-template-columns: repeat(2, 30%);
+  }
+
 }
 /*********************************************************************************** Hamburger **********************************************************************************/
 
@@ -261,8 +255,9 @@ a:hover {
 }
 
 .nav-container {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  position: relative;
+  height: 60px;
   align-items: center;
   height: 62px;
   z-index: 100;
@@ -283,13 +278,6 @@ a:hover {
   font-size: 1.2rem;
   padding: 0.7rem;
    
-}
-
-
-.nav-container {
-  display: block;
-  position: relative;
-  height: 60px;
 }
 
 /* Making the hamburger */
@@ -365,7 +353,6 @@ a:hover {
   font-size: 1.5rem;
   font-weight: 500;
 }
-
 
 /* Controlling the state of the icon */
 .nav-container input[type="checkbox"]:checked ~ .menu-items {

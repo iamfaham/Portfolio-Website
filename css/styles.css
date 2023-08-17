@@ -2,6 +2,8 @@ body {
   background-color: #171717;
   color: #b6b5b5;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   text-align: center;
   font-family: 'Merriweather', serif;
 }
@@ -75,8 +77,16 @@ a:hover {
 }
 
 .intro {
-  width: 30%;
+  width: 40%;
   margin: auto;
+}
+
+.resume{
+  color: #877b7b;
+}
+
+.resume :hover{
+  color: #f6e0e0;
 }
 
 .contact-message {
@@ -160,17 +170,15 @@ a:hover {
 .footer-link:hover {
   opacity: 70%;
 }
+
 /** Skills section **/
 .layoutSkills {
   padding-top: 20px;
   justify-content: space-evenly;
   display: flex;
-  /* grid-template-rows: repeat(1, 100%);
-  grid-template-columns: repeat(2, 30%); */
 }
 .skillset {
   display: block;
-  justify-content: space-evenly;
   border-radius: 10px;
   border-color: #877b7b;
   border: solid;
@@ -182,12 +190,16 @@ a:hover {
   line-height: 2;
   padding-bottom: 10px;
 }
+
+.skillset ul {
+  padding-left: 0;
+}
 .skillset ul li{
   justify-content: center;
   line-height: 2;
   padding-bottom: 10px;
   list-style: none;
-  font-size: 0.90rem;
+  font-size: 16px;
 }
 /* @media screen and (max-width = 700px){
   .skillset{
@@ -197,28 +209,32 @@ a:hover {
 /** Projects section **/
 
 .layout {
-  padding: 50px 50px 30px;
+  padding: 50px 100px 30px;
   justify-content: center;
   display: flex;
   gap: 25px;
   flex-wrap: wrap;
 }
 
-.layout div {
+.layout .project {
   display: block;
   border-radius: 10px;
   border-color: #877b7b;
   border: solid;
-  padding: 5px;
-  flex-grow: 3;
+  padding: 20px;
+  flex-grow: 1;
+}
+.pdiv{
+  width: 80%;
+  margin: auto;
 }
 
 .project h4{
   font-size: 1.5rem;
-  margin: 5% auto;
+  margin: 10px auto 25px;
 }
-.project p {
-  font-size: 0.90rem;
+.pdiv p {
+  font-size: 16px;
 }
 .project a {
   color: #877b7b;
@@ -228,16 +244,8 @@ a:hover {
   color:  #b6b5b5;
   cursor: pointer;
 }
-
-
-@media screen and (max-width = 700px) {
-  .layout {
-    grid-template-columns: repeat(2, 30%);
-  }
-
-}
 /*********************************************************************************** Hamburger **********************************************************************************/
-
+/* 
 * {
   margin: 0;
   padding: 0;
@@ -251,7 +259,6 @@ a:hover {
 
 .navbar {
   width: 100%;
-
 }
 
 .nav-container {
@@ -278,9 +285,12 @@ a:hover {
   font-size: 1.2rem;
   padding: 0.7rem;
    
-}
+} */
+
 
 /* Making the hamburger */
+
+/* 
 .nav-container .checkbox {
   position: absolute;
   display: block;
@@ -312,9 +322,12 @@ a:hover {
   width: 100%;
   border-radius: 10px;
   background: #f6e0e0;
-}
+} */
+
 
 /* Adding transitions  */
+
+/* 
 .nav-container .hamburger-lines .bar1 {
   transform-origin: 0% 0%;
   transition: transform 0.4s ease-in-out;
@@ -353,9 +366,13 @@ a:hover {
   font-size: 1.5rem;
   font-weight: 500;
 }
+ */
+
 
 /* Controlling the state of the icon */
-.nav-container input[type="checkbox"]:checked ~ .menu-items {
+
+
+/* .nav-container input[type="checkbox"]:checked ~ .menu-items {
   transform: translateX(0);
 }
 
@@ -371,4 +388,4 @@ a:hover {
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .bar3 {
   transform: rotate(-45deg);
   background-color: #171717;
-}
+} */ 

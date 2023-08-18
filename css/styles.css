@@ -36,11 +36,10 @@ hr {
   border: dotted #EAF6F6 6px;
   border-bottom: none;
   width: 4%;
-  margin: 100px auto;
+  margin: 80px auto;
 }
 
 a {
-  color: #171717;
   font-family: 'Montserrat', sans-serif;
   margin: 10px 20px;
   text-decoration: none;
@@ -64,11 +63,10 @@ a:hover {
 .bottom-container {
   background-color: #f6e0e0;
   padding: 50px 0 20px;
-  image-resolution: 200;
 }
 
 .middle-container #profile img{
-  width: 18%;
+  width: 300px;
   border-radius: 50%;
 }
 
@@ -77,7 +75,7 @@ a:hover {
 }
 
 .intro {
-  width: 40%;
+  width: 60%;
   margin: auto;
 }
 
@@ -90,8 +88,8 @@ a:hover {
 }
 
 .contact-message {
-  width: 35%;
-  margin: 40px auto 60px;
+  width: 60%;
+  margin: 40px auto 40px;
 }
 
 .copyright {
@@ -112,20 +110,7 @@ a:hover {
   bottom: 300px;
 }
 
-.code-img {
-  width: 25%;
-  float: left;
-  margin-right: 30px;
-}
-
-.chilli-img {
-  width: 25%;
-  float: right;
-  margin-left: 30px;
-}
-
-/*
-.btn {
+/* .btn {
   background: #f6e0e0;
   background-image: -webkit-linear-gradient(top, #f6e0e0, #f4eded);
   background-image: -moz-linear-gradient(top, #f6e0e0, #f4eded);
@@ -140,6 +125,7 @@ a:hover {
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  overflow: auto;
 }
 
 .btn:hover {
@@ -151,8 +137,8 @@ a:hover {
   background-image: linear-gradient(to bottom, #faecec, #d6c5c5);
   text-decoration: none;
   color: #171717;
-} 
-*/
+}  */
+
 
 .mountain {
   width: 300px;
@@ -160,11 +146,19 @@ a:hover {
 }
 
 #profile img {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 #contact-me h2{
   padding-bottom: 5px;
+}
+
+.contact-message a {
+  color: #877b7b;
+}
+
+.contact-message a:hover{
+  color:#b6b5b5;
 }
 
 .footer-link:hover {
@@ -173,9 +167,11 @@ a:hover {
 
 /** Skills section **/
 .layoutSkills {
-  padding-top: 20px;
-  justify-content: space-evenly;
+  padding: 20px 15% 0;
   display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  flex-wrap: wrap;
 }
 .skillset {
   display: block;
@@ -186,8 +182,8 @@ a:hover {
 }
 
 .layoutSkills h4{
-  font-size: 1.5rem;
-  line-height: 2;
+  /* font-size: 1.5rem; */
+  /* line-height: 2; */
   padding-bottom: 10px;
 }
 
@@ -199,15 +195,10 @@ a:hover {
   line-height: 2;
   padding-bottom: 10px;
   list-style: none;
-  font-size: 16px;
 }
-/* @media screen and (max-width = 700px){
-  .skillset{
-    flex-shrink: 0;
-  }
-} */
-/** Projects section **/
 
+
+/** Projects section **/
 .layout {
   padding: 50px 100px 30px;
   justify-content: center;
@@ -224,17 +215,14 @@ a:hover {
   padding: 20px;
   flex-grow: 1;
 }
-.pdiv{
-  width: 80%;
-  margin: auto;
-}
 
 .project h4{
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   margin: 10px auto 25px;
 }
-.pdiv p {
-  font-size: 16px;
+.project p {
+  /* font-size: 16px; */
+  max-width: 100%;
 }
 .project a {
   color: #877b7b;
@@ -244,6 +232,12 @@ a:hover {
   color:  #b6b5b5;
   cursor: pointer;
 }
+
+/* @media screen and (max-width = 576px){
+  body{
+    background-color: red;
+  }
+} */
 /*********************************************************************************** Hamburger **********************************************************************************/
 /* 
 * {
